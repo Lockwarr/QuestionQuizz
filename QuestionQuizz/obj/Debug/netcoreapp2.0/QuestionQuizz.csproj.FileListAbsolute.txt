@@ -1,0 +1,11 @@
+C:\Users\Lockwar\source\repos\QuestionQuizz\QuestionQuizz\bin\Debug\netcoreapp2.0\QuestionQuizz.deps.json
+C:\Users\Lockwar\source\repos\QuestionQuizz\QuestionQuizz\bin\Debug\netcoreapp2.0\QuestionQuizz.runtimeconfig.json
+C:\Users\Lockwar\source\repos\QuestionQuizz\QuestionQuizz\bin\Debug\netcoreapp2.0\QuestionQuizz.runtimeconfig.dev.json
+C:\Users\Lockwar\source\repos\QuestionQuizz\QuestionQuizz\bin\Debug\netcoreapp2.0\QuestionQuizz.dll
+C:\Users\Lockwar\source\repos\QuestionQuizz\QuestionQuizz\obj\Debug\netcoreapp2.0\QuestionQuizz.csprojResolveAssemblyReference.cache
+C:\Users\Lockwar\source\repos\QuestionQuizz\QuestionQuizz\obj\Debug\netcoreapp2.0\QuestionQuizz.csproj.CoreCompileInputs.cache
+C:\Users\Lockwar\source\repos\QuestionQuizz\QuestionQuizz\obj\Debug\netcoreapp2.0\QuestionQuizz.AssemblyInfoInputs.cache
+C:\Users\Lockwar\source\repos\QuestionQuizz\QuestionQuizz\obj\Debug\netcoreapp2.0\QuestionQuizz.AssemblyInfo.cs
+C:\Users\Lockwar\source\repos\QuestionQuizz\QuestionQuizz\bin\Debug\netcoreapp2.0\QuestionQuizz.pdb
+C:\Users\Lockwar\source\repos\QuestionQuizz\QuestionQuizz\obj\Debug\netcoreapp2.0\QuestionQuizz.dll
+C:\Users\Lockwar\source\repos\QuestionQuizz\QuestionQuizz\obj\Debug\netcoreapp2.0\QuestionQuizz.pdb

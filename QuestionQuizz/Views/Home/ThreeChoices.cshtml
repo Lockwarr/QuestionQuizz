@@ -1,0 +1,102 @@
+﻿@{
+    ViewData["Title"] = "ThreeChoices Mode";
+}
+
+@model ThreeChoiceQuestion
+
+<style type="text/css">
+    #wrap {
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    .QuestionBlock {
+        background-color: lightpink;
+    }
+
+    .NextBlockButton {
+        border: 0.5px black solid;
+        background-color: lightgreen;
+    }
+
+    .anwserBlock {
+        border: 0.5px black solid;
+        background-color: lightgray;
+    }
+
+    #left_col {
+        float: left;
+        width: 33.33%;
+    }
+
+    #mid_col {
+        float: left;
+        width: 33.33%;
+    }
+
+    #right_col {
+        float: left;
+        width: 33.33%;
+    }
+</style>
+
+<div class="text-center">
+    <div>
+        <div>
+            <div class="text-center QuestionBlock">
+                <h1>Anwser this!</h1>
+                <h2>@Model.Statement</h2>
+                <p></p>
+            </div>
+            <div class="text-center NextBlockButton" id="wrap">
+                <h3>
+                    <a href="/Home/ThreeChoices?questionIndex=@ViewData["questionIndex"]">Next</a>
+
+                </h3>
+            </div>
+            <p></p>
+            @for (var i = 0; i < Model.Choices.Count; i++)
+            {
+                @switch (i)
+                {
+                    case 0:
+                        if (Model.CorrectAnwserIndex == i)
+                        {
+                            <h3 id="left_col" class="anwserBlock"><a onclick="alert('Correct! This is the correct anwser!')">@Model.Choices[i]</a></h3>
+                        }
+                        else
+                        {
+                            <h3 id="left_col" class="anwserBlock"><a onclick="alert('You are wrong!The correct anwser is: @Model.Choices[Model.CorrectAnwserIndex]')">@Model.Choices[i]</a></h3>
+
+                        }
+                        break;
+                    case 1:
+                        if (Model.CorrectAnwserIndex == i)
+                        {
+                            <h3 id="mid_col" class="anwserBlock"><a onclick="alert('Correct! This is the correct anwser!')">@Model.Choices[i]</a></h3>
+                        }
+                        else
+                        {
+                            <h3 id="mid_col" class="anwserBlock"><a onclick="alert('You are wrong!The correct anwser is: @Model.Choices[Model.CorrectAnwserIndex]')">@Model.Choices[i]</a></h3>
+
+                        }
+                        break;
+                    case 2:
+                        if (Model.CorrectAnwserIndex == i)
+                        {
+                            <h3 id="right_col" class="anwserBlock"><a onclick="alert('Correct! This is the correct anwser!')">@Model.Choices[i]</a></h3>
+                        }
+                        else
+                        {
+                            <h3 id="right_col" class="anwserBlock"><a onclick="alert('You are wrong!The correct anwser is: @Model.Choices[Model.CorrectAnwserIndex]')">@Model.Choices[i]</a></h3>
+
+                        }
+                        break;
+                }
+            }
+
+        </div>
+
+    </div>
+
+</div>

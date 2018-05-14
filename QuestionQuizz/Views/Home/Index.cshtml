@@ -1,0 +1,85 @@
+﻿@{
+    ViewData["Title"] = "Yes/No Mode";
+}
+
+@model YesNoQuestion
+
+
+<style type="text/css">
+    #wrap {
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    #left_col {
+        float: left;
+        width: 50%;
+    }
+
+    #right_col {
+        float: right;
+        width: 50%;
+    }
+
+    .QuestionBlock {
+        background-color: lightpink;
+    }
+    .NextBlockButton {
+        border: 0.5px black solid;
+        background-color: lightgreen;
+    }
+    .anwserBlock {
+        border: 0.5px black solid;
+        background-color: lightgray;
+    }
+</style>
+
+<div>
+    <div class="QuestionBlock">
+        <h1 class="text-center">Anwser this!</h1>
+        <h2 class="text-center">@Model.Statement</h2>
+        <h3 class="text-center">@Model.Author</h3>
+    </div>
+
+</div>
+<p></p>
+<div class="text-center NextBlockButton" id="wrap">
+    <h3>
+        <a href="/Home/Index?questionIndex=@ViewData["questionIndex"]">Next</a>
+
+    </h3>
+</div>
+
+<p></p>
+<div class="text-center" id="wrap">
+    <div id="left_col">
+        <h3 class=" anwserBlock" >
+            @{
+                if (Model.IsTrue)
+                {
+                    <a onclick="alert('Correct! This is the correct anwser!;')">Yes</a>
+                }
+                else
+                {
+                    <a onclick="alert('You are wrong!The correct Anwser is: No !')">Yes</a>
+                }
+            }
+        </h3>
+    </div>
+    <div id="right_col">
+        <h3 class=" anwserBlock" >
+            @{
+                if (!Model.IsTrue)
+                {
+                    <a onclick="alert('Correct! This is the correct anwser!;')">No</a>
+                }
+                else
+                {
+                    <a onclick="alert('You are wrong!The correct Anwser is: Yes!')">No</a>
+                }
+            }
+        </h3>
+
+    </div>
+</div>
+
